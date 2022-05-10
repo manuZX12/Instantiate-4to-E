@@ -16,12 +16,10 @@ public class Instantiator : MonoBehaviour
         {
             CloneAmount = int.Parse(UserCloneAmount.text);
         }
-        int counter = 0;
         
-        while (counter < CloneAmount)
+        for(int i = 0; i<CloneAmount; i++)
         {
             Instantiate(objectToClone);
-            counter++;
         }
     }
 }
