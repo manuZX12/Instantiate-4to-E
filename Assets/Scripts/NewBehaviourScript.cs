@@ -13,6 +13,13 @@ public class NewBehaviourScript : MonoBehaviour
     }
     public void ShowDouble()
     {
-        Debug.Log(int.Parse(txtUserName.text) * 2);
+        if(txtUserName.text != "")
+        {
+            Debug.Log(int.Parse(txtUserName.text) * 2);
+        }
+        else
+        {
+            Debug.Log("El campo no puede estar vacio");
+        }
     }
 }
