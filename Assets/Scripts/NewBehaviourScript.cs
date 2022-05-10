@@ -11,5 +11,8 @@ public class NewBehaviourScript : MonoBehaviour
     {
         Debug.Log("Hola " + txtUserName.text);
     }
-   
+    public void ShowDouble()
+    {
+        Debug.Log(int.Parse(txtUserName.text) * 2);
+    }
 }
